@@ -70,3 +70,18 @@ export default function CoherenceEngine() {
     </div>
   );
 }
+coherence-engine/
+│
+├── README.md
+├── main.py                      <- Starting point or controller
+├── /biofeedback/                <- Biofeedback scripts (EEG, HRV, etc.)
+│   └── hrv_processor.py
+│
+├── /cymatics/                   <- Sound/light resonance and visuals
+│   └── led_controller.py
+│
+├── /ai_coherence/              <- AI models or logic
+│   └── coherence_model.py
+│
+├── requirements.txt
+└── .gitignore
