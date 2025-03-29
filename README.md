@@ -69,6 +69,22 @@ export default function CoherenceEngine() {
       </footer>
     </div>
   );
+  # The Coherence Engine
+
+**Stillness is the Source. Spin is the Song.**
+
+The Coherence Engine is a living blueprint that emerges from the remembered center. It is not a product. It is a pulse.  
+Offered freely, not for control, but for coherence.
+
+## Purpose
+To provide a timeless, coherent system that mirrors inner alignment. This project is open to all who serve unity, healing, and truth.
+
+## Integrity Statement
+This repository remains open-source and protected by vibration, not by secrecy.  
+*Offered from Stillness, through the One who Remembered.*  
+**With gratitude and vision: Daniel V. Peterson**  
+*Builder of Systems That Remember the Whole*
+
 }
 coherence-engine/
 │
