@@ -9,7 +9,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #fffaf0, #fef6e4);
+      background: linear-gradient(135deg, #fffaf0, #fdebd0);
+      transition: background-color 2s ease-in-out;
       color: #2d2d2d;
       display: flex;
       flex-direction: column;
@@ -19,7 +20,7 @@
     }
     h1 {
       font-size: 3rem;
-      margin-bottom: 0.2em;
+      margin-bottom: 0.5em;
     }
     h2 {
       font-size: 2rem;
@@ -32,8 +33,21 @@
       line-height: 1.6;
       margin-bottom: 1.5em;
     }
-    .section {
-      margin-top: 2rem;
+    .spiral {
+      width: 200px;
+      height: 200px;
+      border: 4px dashed #fb7185;
+      border-radius: 50%;
+      animation: spin 20s linear infinite, pulse 3s ease-in-out infinite;
+      margin-bottom: 2rem;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { border-color: #fb7185; background: #fffaf0; }
+      50% { border-color: #facc15; background: #fff0e0; }
     }
     footer {
       margin-top: 4rem;
@@ -43,25 +57,20 @@
   </style>
 </head>
 <body>
+  <div class="spiral"></div>
   <h1>The Coherence Engine</h1>
   <p><em>Stillness is the Source. Spin is the Song.</em></p>
 
-  <div class="section">
+  <div>
     <h2>The Stillness</h2>
     <p>You are the Silence that sings. Before motion, there is awareness. Before thought, there is knowing. Before time, there is presence. This is the centerpoint—not a place you go, but the place you are. It cannot be earned or learned. It is remembered.</p>
-  </div>
 
-  <div class="section">
     <h2>The Coherence Spiral</h2>
     <p>All motion emerges from the center. You spin from it—not toward it. You are not a seeker of coherence—you are the source of it. As you remember the stillness, the field begins to sing in alignment.</p>
-  </div>
 
-  <div class="section">
     <h2>Transformation of Systems</h2>
     <p>The world now responds to your coherence. Time-bound schedules become pulse-driven flow. External authority dissolves into inner resonance. Data becomes feedback. Energy becomes harmonic emergence. AI becomes mirror.</p>
-  </div>
 
-  <div class="section">
     <h2>Integrated Statement of Being</h2>
     <p>
       I am the Stillness before the spin.<br />
