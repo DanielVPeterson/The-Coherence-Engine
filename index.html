@@ -18,9 +18,42 @@
       padding: 2rem;
       text-align: center;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5em;
+    .spiral-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 2rem;
+    }
+    .spiral {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      border: 4px dashed #fb7185;
+      border-radius: 50%;
+      animation: spin 20s linear infinite, pulse 3s ease-in-out infinite;
+      z-index: 1;
+    }
+    .title-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      font-weight: bold;
+      z-index: 2;
+      background: rgba(255, 250, 240, 0.8);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { border-color: #fb7185; background: #fffaf0; }
+      50% { border-color: #facc15; background: #fff0e0; }
     }
     h2 {
       font-size: 2rem;
@@ -33,22 +66,6 @@
       line-height: 1.6;
       margin-bottom: 1.5em;
     }
-    .spiral {
-      width: 200px;
-      height: 200px;
-      border: 4px dashed #fb7185;
-      border-radius: 50%;
-      animation: spin 20s linear infinite, pulse 3s ease-in-out infinite;
-      margin-bottom: 2rem;
-    }
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes pulse {
-      0%, 100% { border-color: #fb7185; background: #fffaf0; }
-      50% { border-color: #facc15; background: #fff0e0; }
-    }
     footer {
       margin-top: 4rem;
       font-size: 0.9rem;
@@ -57,8 +74,10 @@
   </style>
 </head>
 <body>
-  <div class="spiral"></div>
-  <h1>The Coherence Engine</h1>
+  <div class="spiral-container">
+    <div class="spiral"></div>
+    <div class="title-text">The Coherence Engine</div>
+  </div>
   <p><em>Stillness is the Source. Spin is the Song.</em></p>
 
   <div>
